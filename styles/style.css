@@ -1,5 +1,335 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
+  font-family: 'IBM Plex mono', monospace;
+  color: var(--text-color, #F1B2CE);
+  font-size: 18px;
+  line-height: 23.4px;
+  background-color: var(--background-color, #000028);
+  background-image: var(--background-image, url("../images/cover-image.png"));
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+}
+
+/* header */
+
+.text-hadow {
+  text-shadow: 2px 2px 0 var(--for-white-style-p, #FF0070);
+}
+
+.decorated-zone {
+  position: relative;
+}
+
+.decorated-zone::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inline-size: 25px;
+  block-size: 25px;
+  inset-inline-end: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);  /* для мобилки */
+  inset-block-start: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
+  border-inline-end: 1px solid var(--side-stripes, #FF0070);
+  border-block-start: 1px solid var(--side-stripes, #FF0070);
+}
+
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inline-size: 25px;
+  block-size: 25px;
+  inset-inline-start: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
+  inset-block-end: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
+  border-inline-start: 1px solid var(--side-stripes, #FF0070);
+  border-block-end: 1px solid var(--side-stripes, #FF0070);
+}
+
+.rec-title {
+  position: absolute;
+  z-index: -1;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  inset-inline-end: 25px;
+  inset-block-start: 18px;
+  visibility: var(--rec-title-visibility, visible);
+}
+
+.rec-title::before {
+  content: "REC";
+  line-height: 25px;
+  color: var(--accent-two-color, #FF0070);
+}
+
+.rec-title::after {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  box-shadow: 0 0 2px 2px var(--accent-two-color, #FF0070);
+  inline-size: 9px;
+  block-size: 9px;
+  background: var(--accent-two-color, #FF0070);
+}
+
+.cover {
+  display: grid;
+  min-block-size: 100vh;
+  padding: clamp(1.125rem, 1.125rem + 0vw, 1.125rem); /* min для мобильных 10px для десктопа max 20px fs 18px*/
+}
+
+.header-subtitle {
+  color: var(--title-color, #DB00FF);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem); /* Для мобильных */
+  line-height: 82.5%;
+  font-weight: 700;
+  text-shadow: 4px 4px 0 var(--accent-two-color, #FF0070);
+}
+
+.header__suptitle {
+  margin-block: 55px;
+  font-size: 18px;
+  line-height: 23.4px;
+  font-weight: 700;
+  color: var(--high-black-color, #000028);
+  background: var(--accent-two-color, #FF0070);
+}
+
+.header {
+  align-items: start;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.header__theme-menu {
+  margin-block: 65px;
+  justify-self: end;
+}
+
+.header__theme-menu-button_active {
+  border-color: currentColor;
+  pointer-events: none;
+  cursor: default;
+}
+
+.header__theme-menu-button {
+  border: 1px solid transparent;
+  line-height: 18px;
+  padding: 2px 12px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--button-color, #FF0070);
+  text-transform: lowercase;
+  background: transparent;
+  cursor: pointer;
+}
+
+.header__theme-menu-button:focus {
+  outline: 0;
+}
+
+.header__theme-menu-button:hover {
+  border-color: var(--button-color, #FF0070);
+}
+
+.header__theme-menu-button:focus-visible {
+  border-block-end-color: var(--button-color, #FF0070);
+}
+
+/* main */
+
+.main {
+  display: grid;
+  padding: 40px 10px;
+  gap: 50px;
+}
+
+.article__link {
+  text-decoration: none;
+}
+
+.article__link:focus {
+  outline: 0;
+}
+
+.article__link:focus-visible {
+  outline: 1px solid currentColor;
+}
+
+.article__link:hover {
+  text-decoration: underline;
+}
+
+.section__title {
+  font-size: 18px;
+  line-height: 23.4px;
+  font-weight: 700;
+  color: var(--button-color, #FF0070);
+}
+
+.card-hadow {
+  color: var(--high-black-color, #000028);
+  background: var(--accent-two-color, #FF0070);
+}
+
+.section__text {
+  display: grid;
+  gap: 20px;
+}
+
+.article__card {
+  display: grid;
+  gap: 10px;
+}
+
+.list__card {
+  display: grid;
+  gap: 20px;
+}
+
+.section__title-concentrate {
+  margin-block-end: 20px;
+}
+
+/* section photography */
+
+.section-photo {
+  gap: 10px;
+}
+
+.list__photo {
+  display: grid;
+  gap: 10px;
+}
+
+.list__photo-item-img {
+  block-size: 100%;
+  inline-size: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* footer */
+
+.footer-focus {
+  align-items: center;
+  justify-items: center;
+}
+
+/* Media > для 768
+===============================*/
+
+@media (width >= 768px) {
+.header {
+  padding-left: 0;
+}
+
+.header__theme-menu {
+  margin-block-start: 168px;
+  margin-block-end: 70px;
+}
+
+.main {
+  gap: 80px;
+  padding: 60px 20px;
+}
+
+.rec-title {
+  inset-inline-end: 27px;
+  inset-block-start: 20px;
+  line-height: 25px;
+}
+
+.header-subtitle {
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+}
+
+.header__suptitle {
+  inline-size: clamp(364px, 50%, 490px);
+  justify-self: end;
+}
+
+.section__text {
+  grid-template-columns: clamp(236px, 30.3%, 314px) 1fr; /* от 768 до 1024 fs 18px */
+}
+
+.list__card-miscellaneous {
+  grid-column-start: span 2;
+}
+
+.section-photo {
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.list__card-concentrate {
+  grid-column-start: 2;
+}
+
+.list__photo {
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  background-position: center;
+  background-size: cover;
+}
+
+.list__photo-item:nth-child(2),
+.list__photo-item:nth-child(3) {
+  grid-row-start: span 2;
+}
+
+.list__photo-item:first-child,
+.list__photo-item:last-child {
+  grid-column-start: span 2;
+}
+}
+
+/* Media для >1024
+===============================*/
+
+@media (width >= 1024px) {
+.header__theme-menu {
+  margin-block-start: 0;
+  margin-block-end: 215px;
+  margin-inline-start: 20px;
+  justify-self: center;
+}
+  
+.header__theme-menu-list {
+  flex-direction: row;
+  line-height: 18px;
+  font-weight: 400;
+  align-items: center; 
+}
+  
+.header-subtitle {
+  text-shadow: 4px 4px 0 var(--color-red-1, #FF0070);
+}
+
+.section__text {
+  column-gap: 28px;
+}
+
+.list__card-miscellaneous {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.rec-title {
+  inset-inline-end: 28px;
+  inset-block-start: 21px;
+  line-height: 25px;
+}
+
+.header__suptitle {
+  inline-size: clamp(364px, 50%, 490px);
+  justify-self: end;
+}
 }
