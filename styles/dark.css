@@ -12,14 +12,15 @@
 .page.theme_dark {
   /* GENERAL STYLES */
   --rec-title-visibility: visible;
-  --for-white-style-p: var(--color-red-1-dark-style, #FF0070);
-  --side-stripes: var(--color-red-3-dark-style, #FF0070);
-  --text-color: var(--color-pink-1-dark-style), #F1B2CE;
-  --title-color: var(--color-red-2-dark-style, #DB00FF);
-  --button-color: var(--color-red-1-dark-style, #FF0070);
-  --high-black-color: var(--color-black-1-dark-style, #000028);
-  --accent-two-color: var(--color-red-1-dark-style, #FF0070);
-  --background-color: var(--color-black-1-dark-style, #000028);
+  --for-white-style-p: var(--color-red-basic-dark-style, #FF0070);
+  --side-stripes: var(--color-red-basic-dark-style, #FF0070);
+  --text-color: var(--color-pink-beige-dark-style), #F1B2CE;
+  --title-color: var(--color-purple-dark-style, #DB00FF);
+  --button-color: var(--color-red-basic-dark-style, #FF0070);
+  --high-black-color: var(--color-black-dark-dark-style, #000028);
+  --accent-two-color: var(--color-red-basic-dark-style, #FF0070);
+  --background-color: var(--color-black-dark-dark-style, #000028);
+  --paragraph-color: var(--color-pink-beige-dark-style, #F1B2CE);
   --background-image: url("../images/cover-image-dark.png");
 }
 
@@ -27,14 +28,15 @@
   :root {
     /* GENERAL STYLES */
   --rec-title-visibility: visible;
-  --for-white-style-p: var(--color-red-1-dark-style, #FF0070);
-  --side-stripes: var(--color-red-3-dark-style, #FF0070);
-  --text-color: var(--color-pink-1-dark-style), #F1B2CE;
-  --title-color: var(--color-red-2-dark-style, #DB00FF);
-  --button-color: var(--color-red-1-dark-style, #FF0070);
-  --high-black-color: var(--color-black-1-dark-style, #000028);
-  --accent-two-color: var(--color-red-1-dark-style, #FF0070);
-  --background-color: var(--color-black-1-dark-style, #000028);
+  --for-white-style-p: var(--color-red-basic-dark-style, #FF0070);
+  --side-stripes: var(--color-red-basic-dark-style, #FF0070);
+  --text-color: var(--color-pink-beige-dark-style), #F1B2CE;
+  --title-color: var(--color-purple-dark-style, #DB00FF);
+  --button-color: var(--color-red-basic-dark-style, #FF0070);
+  --high-black-color: var(--color-black-dark-dark-style, #000028);
+  --accent-two-color: var(--color-red-basic-dark-style, #FF0070);
+  --background-color: var(--color-black-dark-dark-style, #000028);
+  --paragraph-color: var(--color-pink-beige-dark-style, #F1B2CE);
   --background-image: url("../images/cover-image-dark.png");
   }
 }

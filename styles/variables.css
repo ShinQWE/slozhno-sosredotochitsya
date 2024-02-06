@@ -5,25 +5,24 @@
 
 :root {
   /* DARK STYLE*/
-  --color-pink-1-dark-style : #F1B2CE;
-  --color-black-1-dark-style: #000028;
-  --color-red-1-dark-style: #FF0070;
-  --color-red-2-dark-style: #DB00FF;
-  --color-red-3-dark-style: #FF0070;
+  --color-pink-beige-dark-style : #F1B2CE;
+  --color-black-dark-dark-style: #000028;
+  --color-red-basic-dark-style: #FF0070;
+  --color-purple-dark-style: #DB00FF;
   /* WHITE STYLE*/
-  --color-black-2-white-style: #353430;
-  --color-pink-1-white-style: #FFC2E6;
-  --color-pink-2-white-style: #FF8DCB;
-  --color-black-3-white-style: #353430;
+  --color-black-light-white-style: #353430;
+  --color-pink-title-white-style: #FFC2E6;
+  --color-pink-background-white-style: #FF8DCB;
   /* GENERAL STYLES */
   --rec-title-visibility: visible;
-  --for-white-style-p: var(--color-red-1-dark-style, #FF0070);
-  --side-stripes: var(--color-red-3-dark-style, #FF0070);
-  --text-color: var(--color-pink-1-dark-style, #F1B2CE);
-  --title-color: var(--color-red-2-dark-style, #DB00FF);
-  --button-color: var(--color-red-1-dark-style, #FF0070);
-  --high-black-color: var(--color-black-1-dark-style, #000028);
-  --accent-two-color: var(--color-red-1-dark-style, #FF0070);
-  --background-color: var(--color-black-1-dark-style, #000028);
+  --for-white-style-p: var(--color-red-basic-dark-style, #FF0070);
+  --side-stripes: var(--color-red-basic-dark-style, #FF0070);
+  --text-color: var(--color-pink-beige-dark-style, #F1B2CE);
+  --title-color: var(--color-purple-dark-style, #DB00FF);
+  --button-color: var(--color-red-basic-dark-style, #FF0070);
+  --high-black-color: var(--color-black-dark-dark-style, #000028);
+  --accent-two-color: var(--color-red-basic-dark-style, #FF0070);
+  --background-color: var(--color-black-dark-dark-style, #000028);
+  --paragraph-color: var(--color-pink-beige-dark-style, #F1B2CE);
   --background-image: url("../images/cover-image.png");
 }
