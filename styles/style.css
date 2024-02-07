@@ -78,12 +78,11 @@
 .cover {
   display: grid;
   block-size: max(100vh, 668px);
-  padding: clamp(1.125rem, 1.125rem + 0vw, 1.125rem); /* min для мобильных 10px для десктопа max 20px fs 18px*/
+  padding: clamp(10px, 0.0286rem + 2.5445vw, 20px); /* min для мобильных 10px для десктопа max 20px fs 18px*/
 }
 
 .page-subtitle {
-  margin-block-start: 8px;
-  margin-inline-start: -8px;
+  margin-block-start: 4px;
   color: var(--title-color, #DB00FF);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem); /* Для мобильных */
   line-height: 82.5%;
@@ -93,7 +92,6 @@
 
 .header__suptitle {
   margin-block: 48px;
-  margin-inline-start: -8px;
   font-size: 18px;
   line-height: 23.4px;
   font-weight: 700;
@@ -112,7 +110,7 @@
 }
 
 .header__theme-menu {
-  margin-block: 61px;
+  margin-block: 66px;
   justify-self: end;
 }
 
@@ -252,6 +250,7 @@
   grid-template-rows: 1fr min-content 1fr;
   align-self: end;
   gap: 10px;
+  margin-block: 63px;
 }
 
 .main {
@@ -266,8 +265,6 @@
 }
 
 .page-subtitle {
-  margin-block-start: 3px;
-  margin-inline-start: 3px;
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
 }
 
