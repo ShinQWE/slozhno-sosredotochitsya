@@ -19,6 +19,8 @@
   --button-color: var(--color-black-light-white-style, #353430);
   --high-black-color: var(--color-black-light-white-style, #353430);
   --accent-two-color: var(--color-pink-background-dark-style, #FF8DCB); 
+  --color-btn-secondary: var(--color-button-secondary-white-style, #35343040);
+  --color-btn-paragraph: var(--color-btn-for-text-white-style, #353430);
   --background-color: var(--color-black-light-white-style, #353430);
   --paragraph-color: var(--color-black-light-dark-style, #353430);
   --background-image: url("../images/cover-image-light.png");
@@ -34,6 +36,8 @@
   --button-color: var(--color-black-light-white-style, #353430);
   --high-black-color: var(--color-black-light-white-style, #353430);
   --accent-two-color: var(--color-pink-background-dark-style, #FF8DCB); 
+  --color-btn-secondary: var(--color-button-secondary-white-style, #35343040);
+  --color-btn-paragraph: var(--color-btn-for-text-white-style, #353430);
   --background-color: var(--color-black-light-white-style, #353430);
   --paragraph-color: var(--color-black-light-dark-style, #353430);
   --background-image: url("../images/cover-image-light.png");

@@ -83,6 +83,7 @@
 
 .page-subtitle {
   margin-block-start: 8px;
+  margin-inline-start: -8px;
   color: var(--title-color, #DB00FF);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem); /* Для мобильных */
   line-height: 82.5%;
@@ -91,7 +92,8 @@
 }
 
 .header__suptitle {
-  margin-block: 55px;
+  margin-block: 48px;
+  margin-inline-start: -8px;
   font-size: 18px;
   line-height: 23.4px;
   font-weight: 700;
@@ -143,7 +145,7 @@
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid var(--button-color, rgba(255, 0, 112, 0.4));
+  border: 1px solid var(--color-btn-secondary, #FF007040);
 }
 
 .header__theme-menu-button:focus-visible {
@@ -169,11 +171,11 @@
 }
 
 .article__link:focus-visible {
-  outline: 1px solid var(--button-color, #FF0070);
+  outline: 1px solid var(--color-btn-paragraph, #F1B2CE);
 }
 
 .article__link:hover {
-  border-bottom: 1px solid var(--button-color, #FF0070);
+  border-bottom: 1px solid var(--color-btn-paragraph, #F1B2CE);
 }
 
 .section__title {
@@ -264,7 +266,8 @@
 }
 
 .page-subtitle {
-  margin-block-start: 0px;
+  margin-block-start: 3px;
+  margin-inline-start: 3px;
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
 }
 
@@ -328,7 +331,7 @@
   
 .page-subtitle {
   text-shadow: 4px 4px 0 var(--color-red-1, #FF0070);
-  margin-block-start: 50px;
+  margin-block-start: 60px;
 }
 
 .section__text {
